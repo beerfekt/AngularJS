@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html > <!-- hier wird mein modul aktiviert -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="../angular.js"></script>
+        <script src="js/eigen.js"></script>
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1> Filter - <strong>multiple Properties</strong></h1>
+
+        <div ng-app="meineApp">
+            <div ng-controller="meinController">
+                 <!-- anzahl der zeilen über ng-model -->
+                <!--- SEARCH -->
+                Search1 :
+                <input type="text"  ng-model="searchText.name" placeholder="Search name" />
+                Search2 :
+                <input type="text"  ng-model="searchText.city" placeholder="Search city" />
+                <input type="checkbox" ng-model="exactMatch" /> Exact Match
+
+                <br /><br />
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>City</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <!-- {{  value | filterattribut  }} -->
+                    <tr ng-repeat="employee in employees | filter:searchText:exactMatch">
+                        <td> {{ employee.name }} </td>
+                        <td> {{ employee.gender }} </td>
+                        <td> {{ employee.city }} </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+
+            </div>
+        </div>
+
+    </body>
+</html>

@@ -30,8 +30,3 @@ var meineApp = angular.module('meineApp', [])
     });
 
 
-
-
-
-
-//TODO: next video - lesson 7:    https://www.youtube.com/watch?v=8bf5aZSWp9A&list=PL6n9fhu94yhWKHkcL7RJmmXyxkuFB3KSl&index=7
