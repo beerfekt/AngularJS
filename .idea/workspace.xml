@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a159b2c4-6a2a-42d6-9fb8-09523ad053c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/filter-multiple-properties/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-multiple-properties/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/filter-multiple-properties/js/eigen.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-filter/css/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-filter/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/custom-filter/js/eigen.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/search/js/eigen.js" beforeDir="false" afterPath="$PROJECT_DIR$/search/js/eigen.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,42 +24,45 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="2" />
-          <entry key="html" value="5" />
-          <entry key="js" value="8" />
+          <entry key="html" value="7" />
+          <entry key="js" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="2" />
-          <entry key="HTML" value="5" />
-          <entry key="JavaScript" value="8" />
+          <entry key="HTML" value="7" />
+          <entry key="JavaScript" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="410" />
-          <entry key="js" value="180" />
-          <entry key="txt" value="28" />
+          <entry key="html" value="861" />
+          <entry key="js" value="1524" />
+          <entry key="txt" value="114" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="410" />
-          <entry key="JavaScript" value="180" />
-          <entry key="PLAIN_TEXT" value="28" />
+          <entry key="HTML" value="861" />
+          <entry key="JavaScript" value="1524" />
+          <entry key="PLAIN_TEXT" value="114" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="AngularJS" />
+  </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45994064">
+    <splitter split-orientation="horizontal" split-proportion="0.4554731">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/filter-multiple-properties/index.html">
+            <entry file="file://$PROJECT_DIR$/custom-filter/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+                <state relative-caret-position="390">
+                  <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
                 </state>
               </provider>
             </entry>
@@ -70,10 +72,10 @@
       <split-second>
         <leaf>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/filter-multiple-properties/js/eigen.js">
+            <entry file="file://$PROJECT_DIR$/custom-filter/js/eigen.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="465">
-                  <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+                <state relative-caret-position="315">
+                  <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
                 </state>
               </provider>
             </entry>
@@ -93,6 +95,8 @@
         <option value="$PROJECT_DIR$/search/js/eigen.js" />
         <option value="$PROJECT_DIR$/filter-multiple-properties/js/eigen.js" />
         <option value="$PROJECT_DIR$/filter-multiple-properties/index.html" />
+        <option value="$PROJECT_DIR$/custom-filter/js/eigen.js" />
+        <option value="$PROJECT_DIR$/custom-filter/index.html" />
       </list>
     </option>
   </component>
@@ -105,7 +109,7 @@
   <component name="ProjectFrameBounds" extendedState="4">
     <option name="x" value="1600" />
     <option name="y" value="24" />
-    <option name="width" value="1393" />
+    <option name="width" value="1379" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
@@ -123,29 +127,12 @@
             <path>
               <item name="AngularJS" type="b2602c69:ProjectViewProjectNode" />
               <item name="AngularJS" type="462c0819:PsiDirectoryNode" />
-              <item name="filter-multiple-properties" type="462c0819:PsiDirectoryNode" />
+              <item name="custom-filter" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AngularJS" type="b2602c69:ProjectViewProjectNode" />
               <item name="AngularJS" type="462c0819:PsiDirectoryNode" />
-              <item name="filter-multiple-properties" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AngularJS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AngularJS" type="462c0819:PsiDirectoryNode" />
-              <item name="filter-multiple-properties" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AngularJS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AngularJS" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AngularJS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AngularJS" type="462c0819:PsiDirectoryNode" />
-              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="custom-filter" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -183,7 +170,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1544524726935</updated>
-      <workItem from="1544524728108" duration="4174000" />
+      <workItem from="1544524728108" duration="11391000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;added search-practice&quot;">
       <created>1544525336007</created>
@@ -199,24 +186,47 @@
       <option name="project" value="LOCAL" />
       <updated>1544525372515</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;added search-with-properties exercise&quot;">
+      <created>1544532726349</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544532726349</updated>
+    </task>
+    <task id="LOCAL-00004" summary="&quot;finished search with properties second form&quot;">
+      <created>1544537746674</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1544537746674</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4174000" />
+    <option name="totallyTimeSpent" value="11391000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1600" y="24" width="1393" height="1056" extended-state="4" />
+    <frame x="1600" y="24" width="1379" height="1056" extended-state="4" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.018559763" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" sideWeight="0.5010776" side_tool="true" weight="0.3363029" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989224" visible="true" weight="0.19129783" />
+      <window_info id="Structure" order="1" sideWeight="0.5010776" side_tool="true" visible="true" weight="0.19129783" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
       <window_info anchor="bottom" id="Messages" weight="0.3297414" />
-      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Terminal" weight="0.3297414" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -224,7 +234,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297414" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -239,7 +249,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;added search-practice&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;added search-practice&quot;" />
+    <MESSAGE value="&quot;added search-with-properties exercise&quot;" />
+    <MESSAGE value="&quot;finished search with properties second form&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;finished search with properties second form&quot;" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/search/css/styles.css">
@@ -265,15 +277,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/filter-multiple-properties/js/eigen.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="292">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/filter-multiple-properties/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        <state relative-caret-position="216">
+          <caret line="46" column="22" lean-forward="true" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom-filter/js/eigen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/custom-filter/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="61" selection-start-line="26" selection-start-column="61" selection-end-line="26" selection-end-column="61" />
         </state>
       </provider>
     </entry>

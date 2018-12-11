@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html > <!-- hier wird mein modul aktiviert -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="../angular.js"></script>
+        <script src="js/eigen.js"></script>
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1> Filter - <strong>Werte [int] in strings umwandeln</strong></h1>
+
+        <div ng-app="meineApp">
+            <div ng-controller="meinController">
+
+
+                <br /><br />
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>City</th>
+                    </tr>
+                    </thead>
+                    <tbody>                                                    <!-- {{  filter:searchText:exactMatch  }} -->
+                        <tr ng-repeat="employee in employees" >
+                            <td> {{ employee.name }} </td>
+                            <td> {{ employee.gender | gender }} </td>
+                            <td> {{ employee.city }} </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br />
+                <br />
+                <br />
+                <br />
+
+            </div><!-- meinController -->
+
+        </div><!-- ng-app -->
+
+    </body>
+</html>
