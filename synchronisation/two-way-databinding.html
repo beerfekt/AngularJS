@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/angular.js"></script>
+    <script src="js/databinding.js"></script>
+</head>
+<body>
+
+
+
+<div ng-app="meineApp">
+
+    <div ng-controller="meinController">
+
+        <h4>Model: vorhanden</h4>
+
+        <!--
+            Verwendung definiertem Model:
+            ng-model - updated model when view changes
+                     - variablenname beachten (message)
+                                     - Bei neuer variable die nicht im model vorhanden, wird neues model generiert
+        -->
+        <input type="text" ng-model="message" />
+
+        <!--
+         the {{ binding-expression}} updates view when model changes
+
+        -->
+        <h2> {{ message }}</h2>
+
+
+        <hr>
+
+        <h4>Model: generierung</h4>
+        <!--
+         - Generierung von Modell:
+         - Bei neuer variable die nicht im model vorhanden, wird neues model generiert
+        -->
+        <input type="text" ng-model="neu" />
+
+        <!--
+         the {{ binding-expression}} updates view when model changes
+
+        -->
+        <h2> {{ neu }}</h2>
+
+
+
+
+        <br>
+        <hr>
+        <br>
+
+
+        <h4>Initialisierung  (angestellter)- Beispiel</h4>
+
+        <h5>Eingabe:</h5>
+        <table>
+            <tr>
+                <td> Vorname: </td>
+                <td><input type ="text" ng-model="angestellter.vorname"></td>
+            </tr>
+
+            <tr>
+                <td> Nachname: </td>
+                <td><input type ="text" ng-model="angestellter.nachname"></td>
+            </tr>
+
+        </table>
+
+        <h5>Ausgabe:</h5>
+        <table>
+            <tr>
+                <td> Vorname: </td>
+                <td>{{ angestellter.vorname}}</td>
+            </tr>
+
+            <tr>
+                <td> Nachname: </td>
+                <td>{{ angestellter.nachname}}</td>
+            </tr>
+
+        </table>
+
+
+
+
+
+
+    </div>
+
+    <!-- Controller -->
+
+</div>
+<!-- Modul -->
+
+</body>
+</html>

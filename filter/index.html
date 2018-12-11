@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html > <!-- hier wird mein modul aktiviert -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="../angular.js"></script>
+        <script src="js/eigen.js"></script>
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1> Filter via <strong>ng-</strong></h1>
+
+        <div ng-app="meineApp">
+            <div ng-controller="meinController">
+                 <!-- anzahl der zeilen über ng-model -->
+                Rows to display : <input type="number" step="1"
+                                         ng-model="rowCount" max="5" min="0" />
+                <br /><br />
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date of Birth</th>
+                        <th>Gender</th>
+                        <th>Salary (number filter)</th>
+                        <th>Salary (currency filter)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <!-- {{  value | filterattribut  }} -->
+                    <tr ng-repeat="employee in employees | limitTo:rowCount">
+                        <td> {{ employee.name | uppercase }} </td>
+                        <td> {{ employee.dateOfBirth | date:"dd/MM/yyyy" }} </td>
+                        <td> {{ employee.gender }} </td>
+                        <td> {{ employee.salary | number:2 }} </td>
+                        <td> {{ employee.salary | currency : "£" : 1 }} </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+
+            </div>
+        </div>
+
+    </body>
+</html>

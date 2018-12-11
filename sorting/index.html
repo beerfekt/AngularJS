@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html > <!-- hier wird mein modul aktiviert -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="../angular.js"></script>
+        <script src="js/eigen.js"></script>
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1> Sort via <strong>ng-model="sortColumn"</strong></h1>
+
+        <div ng-app="meineApp">
+            <div ng-controller="meinController">
+
+                Sort By :
+                <select ng-model="sortColumn">
+                    <option value="name">Name ASC</option>
+                    <option value="+dateOfBirth">Date of Birth ASC</option>
+                    <option value="+gender">Gender ASC</option>
+                    <option value="-salary">Salary DESC</option>
+                    <option value="+salary">Salary ASC</option>
+                </select>
+                <br /><br />
+
+
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Date of Birth</th>
+                        <th>Gender</th>
+                        <th>Salary (number filter)</th>
+                        <th>Salary (currency filter)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <!-- {{  value | filterattribut  }} -->
+                    <tr ng-repeat="employee in employees | orderBy:sortColumn">
+                        <td> {{ employee.name  }} </td>
+                        <td> {{ employee.dateOfBirth | date:"dd/MM/yyyy" }} </td>
+                        <td> {{ employee.gender }} </td>
+                        <td> {{ employee.salary }} </td>
+                        <td> {{ employee.salary }} </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+
+            </div>
+        </div>
+
+    </body>
+</html>

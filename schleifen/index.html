@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html > <!-- hier wird mein modul aktiviert -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="js/angular.js"></script>
+        <script src="js/eigen.js"></script>
+    </head>
+    <body>
+
+        <h1> Schleifen via <strong>ng-repeat</strong></h1>
+        <div ng-app="meineApp">
+            <div ng-controller="meinController">
+
+            <h2>Normal:</h2>
+            <h3>Belegschaft: </h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th> </th>
+                        <th><strong>Vorname : </strong></th>
+                        <th><strong>Nachname: </strong></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr ng-repeat="angestellter in belegschaft">
+                        <td> >  </td>
+                        <td>
+                            {{ angestellter.vorname }}
+                        </td>
+                        <td>
+                            {{ angestellter.nachname }}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+                <h2>Verschachtelt:</h2>
+                <h3>Länder: </h3>
+                <ul>
+                    <li ng-repeat="country in countries">
+                        <strong>{{country.name}} [ {{ $index }} ]</strong>
+                        <ul>
+                            <li ng-repeat="city in country.cities">
+                                {{city.name}} [ {{ $parent.$index }}][ {{ $index}}]
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+    </body>
+</html>

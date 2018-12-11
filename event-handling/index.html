@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html > <!-- hier wird mein modul aktiviert -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="../angular.js"></script>
+        <script src="js/eigen.js"></script>
+    </head>
+    <body>
+        <h1> Eventhandling via <strong>ng-click</strong></h1>
+
+        <div ng-app="meineApp">
+            <div ng-controller="meinController">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Likes</th>
+                        <th>Dislikes</th>
+                        <th>Like/Dislike</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr ng-repeat="technology in technologies">
+                        <td>
+                            {{ technology.name }}</td>
+                        <td>
+                            {{ technology.likes }}</td>
+                        <td>{{ technology.dislikes }}</td>
+                        <td>
+                            <input type="button" value="like" ng-click="incrementLikes(technology)" />
+                            <input type="button" value="dislike" ng-click="incrementDisLikes(technology)" />
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </body>
+</html>

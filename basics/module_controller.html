@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html > <!-- hier wird mein modul aktiviert -->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../angular.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+
+
+
+
+    <!-- Bereich des Moduls -->
+    <div ng-app="meinModul">
+
+        <!-- Bereich des Controllers -->
+        <div ng-controller="meinController">
+            Name: <input type="text" ng-model="message" required>
+            <hr>
+            <div>Hallo du {{ message }}!</div>
+            <hr>
+
+            <div>
+                <h4>Person:</h4>
+                <ul>
+                    <li>Vorname: {{ angestellter.vorname}}</li>
+                    <li>Nachname: {{ angestellter.nachname}}</li>
+                </ul>
+            </div>
+            <hr>
+        </div>
+        <!-- Controller -->
+
+    </div>
+    <!-- Modul -->
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html > <!-- hier wird mein modul aktiviert -->
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../angular.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+<body>
+
+
+
+
+<!-- Bereich des Moduls -->
+<div ng-app="meineApp">
+
+    <!-- Bereich des Controllers -->
+    <div ng-controller="meinController">
+        <!-- ng-src ist wichtig, damit anfrage gleich funktionier -->
+        <img ng-src="{{ mannschaft.icon }}" alt="{{'Mannschaft:  ' + mannschaft.name }}"/>
+        <ul>
+            <li><strong>Name: </strong>{{ mannschaft.name }}</li>
+        </ul>
+    </div>
+
+    <!-- Controller -->
+
+</div>
+<!-- Modul -->
+
+</body>
+</html>

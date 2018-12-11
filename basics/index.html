@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>angularJS-tutorial</title>
+    <script src="../angular.js"></script>
+</head>
+
+<body >
+    <div ng-app >  <!-- ng-app is a director : it shows the start, everything in body is managed by angular -->
+        10 + 20 = {{ 10 + 20  }} <br>
+        {{  {name: 'david', age:'30'}.name  }} <br>  <!-- acces property via .property -->
+        {{  ['orange','apple'][1] }}            <!-- access array via [i] -->
+
+    </div><!-- angular-section-end -->
+
+    <div>  <!-- angular does nothing -->
+        10 + 20 = {{ 10 + 20  }}
+    </div>
+
+
+
+</body>
+</html>
+
