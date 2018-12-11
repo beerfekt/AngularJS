@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html > <!-- hier wird mein modul aktiviert -->
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="../angular.js"></script>
+        <script src="js/eigen.js"></script>
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1> Search via <strong>"filter:searchText"</strong></h1>
+
+        <div ng-app="meineApp">
+            <div ng-controller="meinController">
+
+
+                <!--- SEARCH -->
+                Search : <input type="text" placeholder="Search employees"
+                                ng-model="searchText" />
+                                    <!-- seachText = alle spalten,
+                                         searchText.spalte = nur die spezifische Spalte -->
+
+
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>Salary (number filter)</th>
+                        <th>Salary (currency filter)</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    <!-- {{  value | filterattribut  }} -->
+                    <tr ng-repeat="employee in employees | filter:searchText">
+                        <td> {{ employee.name  }} </td>
+                        <td> {{ employee.gender }} </td>
+                        <td> {{ employee.salary }} </td>
+                        <td> {{ employee.salary }} </td>
+                    </tr>
+                    </tbody>
+                </table>
+
+
+
+            </div>
+        </div>
+
+    </body>
+</html>
