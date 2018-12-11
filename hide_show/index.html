@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+        <script src="../angular.js"></script>
+        <script src="js/custom.js"></script>
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>ng hide and ng show</h1>
+
+        <div ng-app="meineApp">
+            <div ng-controller="meinController">
+
+                <!-- ng-model="hideSalary" -->
+                <input type="checkbox" ng-model="hideSalary" />Hide Salary
+
+
+
+                <br /><br />
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>City</th>
+                        <!-- ng-hide="hideSalary" -->
+                        <th ng-hide="hideSalary" >Salary</th>
+                        <!-- wenn diese zeile "ng-show.." fehlt, dann verschindet feld ganz -->
+                        <th ng-show="hideSalary">Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="employee in employees" >
+                            <td> {{ employee.name }} </td>
+                            <td> {{ employee.gender}} </td>
+                            <td> {{ employee.city }} </td>
+                            <!-- ng-hide="hideSalary" -->
+                            <td ng-hide="hideSalary" > {{ employee.salary }} </td>
+                            <!-- wenn diese zeile "ng-show.." fehlt, dann verschindet feld ganz -->
+                            <td ng-show="hideSalary" > XXX  </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br />
+                <br />
+                <br />
+                <br />
+
+            </div><!-- meinController -->
+
+        </div><!-- ng-app -->
+
+    </body>
+</html>
