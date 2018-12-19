@@ -3,7 +3,7 @@
 
 
 <!DOCTYPE html >
-<html ng-app="routerApp">
+<html ng-app="myApp">
 
     <head>
         <!-- CSS (load bootstrap) -->
@@ -12,23 +12,27 @@
         <script src="../angular.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
         <script src="app.js"></script>
+        <!-- include the controllers -->
+        <script src="courses/courses.controller.js"></script>
+        <script src="home/home.controller.js"></script>
     </head>
 
-    <body ng-app="routerApp">
+    <!-- apply our angular app to our site -->
+    <body>
 
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-inverse" role="navigation">
+    <nav class="navbar navbar-inverse" role=<"navigation">
         <div class="navbar-header">
             <a class="navbar-brand" ui-sref="#">AngularUI Router</a>
         </div>
         <ul class="nav navbar-nav">
             <li><a ui-sref="home">Home</a></li>
-            <li><a ui-sref="about">About</a></li>
+            <li><a ui-sref="courses">Courses</a></li>
         </ul>
     </nav>
 
     <!-- MAIN CONTENT -->
-    <div class="container">
+    <div class="container" >
         <!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
         <div ui-view></div>
     </div>
