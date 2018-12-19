@@ -1,0 +1,22 @@
+
+<div class="jumbotron text-center">
+<h1> People </h1>
+<p>Welcome to peoples </p>
+</div>
+
+
+<ul class="list-group">
+    <li class="list-group-item"
+        ng-repeat="person in persons" >
+
+        {{person.Name + ' : ' + person.LastName }}
+    </li>
+</ul>
+
+
+
+<button class="btn btn-info" ng-click="vm.goHome()" >Go Home</button>
+
+<button class="btn btn-succes" ng-click="vm.getPeople()" >List People</button>
+
+
