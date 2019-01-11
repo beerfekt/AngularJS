@@ -1,0 +1,35 @@
+<!-- extends  articles/index.html -->
+
+
+<!-- toggle bootstrap visibility class -->
+<div class="articles">
+    <div>
+        <ul class="list-inline">
+            <li class="btn btn-sm btn-light"  ng-repeat="article in articles" ng-click="vm.showArticleDetails(article.id)">{{ article.title }}</li>
+        </ul>
+    </div>
+
+    </hr>
+    <div class="article">
+        <h3>{{ article.title}} </h3>
+        <p> {{ article.content}}</p>
+    </div>
+</div>
+
+
+<!--
+
+    //TOGGLE Articles, if you want to show and hide, set this
+
+ <div ng-class="visibility ? 'visible' : 'hidden'" >
+    <ul>
+        <li ng-repeat="article in articles" ng-click="vm.showArticleDetails(article.id)">{{ article.title }}</li>
+    </ul>
+    <div>
+        <h3>{{ article.title}} </h3>
+        <p> {{ article.content}}</p>
+    </div>
+</div>
+
+
+ -->

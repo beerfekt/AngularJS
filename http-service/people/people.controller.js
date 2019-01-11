@@ -19,7 +19,6 @@
 
         //Go to home
         function getPeople(){
-
             $http({
                 method : "GET",
                 url : 'http://localhost:63342/AngularJS/http-service/database.json'
@@ -28,12 +27,6 @@
             }, function myError(response) {
                 $scope.persons = response.statusText + 'DU PFOSSSSSTEN DAS GEHT NICHT';
             });
-/*
-            $http.get('http://localhost:63342/AngularJS/http-service/database.json')
-                .success( function(response ){
-                    $scope.persons = response.records;
-                });
-*/
         }
 
     };
